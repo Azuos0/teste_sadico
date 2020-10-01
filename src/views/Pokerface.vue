@@ -3,8 +3,7 @@
     <h1 class="title">Bem-vindo ao Teste Sádico!</h1>
     <Emoticon />
     <span class="subtitle">
-      Este carinha acima é o Zezinho! E hoje, aparentemente, ele não está em um
-      dia legal...
+      Essa acima é a SPA! E hoje é só mais um dia normal na vida dela...
     </span>
   </div>
 </template>
@@ -33,13 +32,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.title {
-  font-size: 50px;
-}
-
-.subtitle {
-  font-size: 24px;
-}
-</style>

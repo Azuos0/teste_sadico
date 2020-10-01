@@ -54,10 +54,10 @@ export default {
         //await 2000 ms and change state to less sad
         this.changeMood(MOOD.LESS_SAD);
         setTimeout(() => {
-          //await 1500 ms and change state to almost poker face
+          //await 2000 ms and change state to almost poker face
           this.changeMood(MOOD.ALMOST_POKER_FACE);
           setTimeout(() => {
-            //await 1500 ms and change state to poker face
+            //await 2000 ms and change state to poker face
             this.changeMood(MOOD.POKER_FACE);
             setTimeout(() => {
               //await 2000 ms and change state to happy
@@ -67,8 +67,8 @@ export default {
                 this.closeModal();
               }, 2000);
             }, 2000);
-          }, 1500);
-        }, 1500);
+          }, 2000);
+        }, 2000);
       }, 2000);
     },
     changeMood(newMood) {

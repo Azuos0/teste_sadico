@@ -39,4 +39,12 @@
 .big-emoticon {
   font-size: 100px;
 }
+
+.title {
+  font-size: 50px;
+}
+
+.subtitle {
+  font-size: 24px;
+}
 </style>
