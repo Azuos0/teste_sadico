@@ -5,6 +5,7 @@
     <span class="subtitle">
       Aparentemente nossa amiga não parece muito feliz. Talvez uma boa piada possa animá-la...
     </span>
+     <span class="msg">(clique para continuar)</span>
   </div>
 </template>
 

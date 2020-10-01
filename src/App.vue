@@ -47,4 +47,8 @@
 .subtitle {
   font-size: 24px;
 }
+
+.msg {
+  margin-top: 10px;
+}
 </style>

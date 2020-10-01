@@ -5,6 +5,7 @@
     <span class="subtitle">
       Essa acima é a SPA! E hoje é só mais um dia normal na vida dela...
     </span>
+    <span class="msg">(clique para continuar)</span>
   </div>
 </template>
 
