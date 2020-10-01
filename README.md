@@ -4,6 +4,7 @@ Apesar do nome, o **Teste Sádico** é apenas um contador de piadas geeks aleat�
 
 ## A ideia do aplicativo :bulb:
 A ideia desse aplicativo vem de um teste frontend da [incuca](https://incuca.net/) e segue as seguintes regras:
+    
     1. Aplicação inicia com uma tela nem feliz, nem triste :|
     2. O primeiro clique na tela deve alterar a rota (URL do navegador) e torná-la 100% triste :(  
     3. Um clique na tela deve alterar a rota (URL no navegador) e gerar uma piada randômica em um modal
@@ -14,7 +15,7 @@ A ideia desse aplicativo vem de um teste frontend da [incuca](https://incuca.net
 
 Essa aplicação foi feita em Vue e utiliza o Vuex e o Vue-Router para gerenciamento do estado e das rotas da aplicação. Além disso, foram adicionadas as bibliotecas vue-meta para melhoria no SEO e o Jest para realização dos testes automatizados.
 
-## Passo a passo da criação do a aplicativo :memo:
+## Passo a passo da criação do aplicativo :memo:
 Primeiro passo para a criação da aplicação é visualizar que existem três páginas/views: a sem alteração de humor, a 100% triste e a que tem a modal onde a piada é contada. Aqui chamamos elas, respectivamente, de Pokerface, Sad e Joke e podem ser vistas dentro da pasta views.
 
 #### Pokerface.vue e Sad.vue views
