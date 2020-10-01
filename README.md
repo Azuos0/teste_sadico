@@ -18,7 +18,7 @@ Essa aplicação foi feita em Vue e utiliza o Vuex e o Vue-Router para gerenciam
 ## Passo a passo da criação do aplicativo :memo:
 Primeiro passo para a criação da aplicação é visualizar que existem três páginas/views: a sem alteração de humor, a 100% triste e a que tem a modal onde a piada é contada. Aqui chamamos elas, respectivamente, de Pokerface, Sad e Joke e podem ser vistas dentro da pasta views.
 
-#### Pokerface.vue e Sad.vue views
+### Pokerface.vue e Sad.vue views
 Como a aplicação começa pela tela de pokerface é por ela também que vamos começar a construção do nosso sistema. Nessa primeira tela, precisamos garantir que a nossa amiga SPA não esteja nem feliz e nem triste sempre que a tela for carregada. Como o humor da SPA é compartilhado por toda a aplicação, foi criada uma variável chamada **mood** dentro da store do **Vuex** para manter o estado e, junto com ela, o getter **getMood** e a mutation **SET_MOOD** para que fosse possível manipulá-lo posteriormente. O código do Vuex pode ser visto abaixo. Note que o valor do **mood** foi inicializado com SAD por ele ser o humor inicial tanto na tela SAD quanto na tela Joke.
     
     export default new Vuex.Store({
@@ -76,7 +76,7 @@ A página Sad segue a mesma lógica da página Pokerface, só que dessa vez veri
     },
     // src/views/Sad.vue XD
 
-#### Joke.vue view
+### Joke.vue view
 Nessa página seguimos uma ideia parecida com a das duas anteriores, checamos o estado da aplicação assim que a tela é carregada e setamos o valor triste ao **mood** caso ele esteja com um valor diferente. Feito isso, ainda no mounted da página, fazemos uma requisição para a API de piadas e, ao recebermos a resposta, a atribuimos à variavel **joke** do data, abrimos o modal e chamamos o método **listenJoke**.
     
     mounted() {
