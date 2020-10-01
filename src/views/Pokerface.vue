@@ -17,11 +17,14 @@ export default {
     Emoticon,
   },
   metaInfo() {
+    //seta o título da página
     return {
       title: 'Teste Sádico - Poker Face',
     };
   },
   mounted() {
+    //verifica se o humor é diferente de poker_face (😐) 
+    //e caso seja atribui o valor 😐 ao mood
     if (this.$store.getters.getMood !== MOOD.POKER_FACE)
       this.$store.commit('SET_MOOD', MOOD.POKER_FACE);
   },

@@ -35,9 +35,13 @@ export default {
     };
   },
   mounted() {
+    //verifica se o humor é diferente de sad (☹️)
+    //e caso seja atribui o valor ☹️ ao mood
     if (this.$store.getters.Mood !== MOOD.SAD)
       this.$store.commit('SET_MOOD', MOOD.SAD);
 
+    //faz uma chamada à api para gerar uma piada, abre o modal 
+    //e começa a animação de escutar a piada
     ApiService.getJoke()
       .then((response) => {
         this.joke = response.joke;
@@ -51,19 +55,19 @@ export default {
   methods: {
     listenJoke() {
       setTimeout(() => {
-        //await 2000 ms and change state to less sad
+        //espera 2000 ms e muda o estado para sad
         this.changeMood(MOOD.LESS_SAD);
         setTimeout(() => {
-          //await 2000 ms and change state to almost poker face
+          //espera 2000 ms e muda o estado para almost poker face
           this.changeMood(MOOD.ALMOST_POKER_FACE);
           setTimeout(() => {
-            //await 2000 ms and change state to poker face
+            //espera 2000 ms e muda o estado para poker face
             this.changeMood(MOOD.POKER_FACE);
             setTimeout(() => {
-              //await 2000 ms and change state to happy
+              //espera 2000 ms e muda o estado para happy
               this.changeMood(MOOD.HAPPY);
               setTimeout(() => {
-                //await 2000 ms and restart to first page
+                //espera 2000 ms e reinicia o ciclo da aplicação
                 this.closeModal();
               }, 2000);
             }, 2000);

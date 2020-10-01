@@ -1,3 +1,4 @@
+//constantes com os valores dos emoticons
 export const MOOD = {
   POKER_FACE: "😐",
   SAD: "☹️",

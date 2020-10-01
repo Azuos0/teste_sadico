@@ -22,6 +22,8 @@ export default {
     };
   },
   mounted() {
+    //verifica se o humor é diferente de sad (☹️) 
+    //e caso seja atribui o valor ☹️ ao mood
     if (this.$store.getters.getMood !== MOOD.SAD)
       this.$store.commit('SET_MOOD', MOOD.SAD);
   },

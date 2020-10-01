@@ -2,20 +2,22 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import { MOOD } from '@/utils/constants';
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    mood: MOOD.SAD
+    mood: MOOD.SAD, //humor da spa
   },
   mutations: {
-    SET_MOOD(state, newMood){
+    //Seta um novo humor a spa
+    SET_MOOD(state, newMood) {
       state.mood = newMood;
-    }
+    },
   },
-  getters:{
+  getters: {
+    //retorna o humor da spa
     getMood(state) {
       return state.mood;
     },
-  }
-})
+  },
+});

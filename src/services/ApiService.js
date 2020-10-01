@@ -10,6 +10,7 @@ const apiClient = axios.create({
 });
 
 export default {
+  //faz a comunicação com a api das piadas e retorna uma piada
   async getJoke() {
     return (await apiClient.get('/api?format=json')).data;
   },
